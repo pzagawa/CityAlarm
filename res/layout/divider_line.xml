@@ -1,0 +1,20 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">       
+
+	<LinearLayout
+	    android:layout_weight="0"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#ff182028"
+	    android:orientation="vertical" />
+	
+	<LinearLayout
+	    android:layout_weight="0"
+	    android:layout_width="match_parent"
+	    android:layout_height="1dp"
+	    android:background="#ff505860"
+	    android:orientation="vertical" />
+         
+</LinearLayout>

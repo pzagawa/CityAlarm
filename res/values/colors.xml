@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   <!-- list item default colors -->
+   <color name="list_location_item_title_color">#fff0f0f0</color>
+   <color name="list_location_item_distance_color">#ffc0c0c0</color>
+   <color name="list_location_item_time_color">#ffa0a0a0</color>
+   
+   <!-- list item not visited colors -->
+   <color name="list_location_item_title_color_not_visited">#ffc0c0c0</color>
+   <color name="list_location_item_distance_color_not_visited">#ffa0a0a0</color>
+   <color name="list_location_item_time_color_not_visited">#ff909090</color>
+   
+</resources>

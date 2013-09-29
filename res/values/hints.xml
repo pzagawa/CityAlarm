@@ -1,0 +1,67 @@
+<resources>
+
+    <!-- hint example and format -->
+	<string-array name="hint_example">
+	    <!-- hint id written to database -->
+		<item>1000</item>
+		<!-- hint title -->
+	    <item>WITAJ</item>
+		<!-- hint content lines -->
+	    <item>content</item>
+	</string-array>
+
+	<string-array name="hint_welcome">
+		<item>1</item>
+		<item>WITAJ</item>
+		<item>CityAlarm, %version%</item>
+		<item>Ten program zostały stworzony, by powiadamiać Cię o zbliżaniu się do wybranego miejsca (miasta, wioski lub okolicy).</item>
+		<item>Program sprawdza miejsce w którym aktualnie jesteś a następnie czy w pobliżu znajduje się miejsce do którego zmierzasz.</item>
+		<item>Program został zaprojektowany, by działać skutecznie przez długi czas bez nadmiernego zużycia baterii, a także w miejscach gdzie brakuje zasięgu sieci. Domyślnie działa w trybie przybliżonej lokalizacji bez użycia GPS. Dokładność odczytu pozycji może wynosić do 5km. Gdy to nie wystarczy, możesz ustawić pobieranie pozycji z użyciem GPS w ustawieniach. W przypadku problemów z uzyskaniem pozycji, program użyje GPS automatycznie.</item>
+		<item>KRÓTKI OPIS</item>
+		<item>Interfejs programu składa się z trzech głównych elementów:</item>
+		<item>1. paska tytułowego w którym pojawia się co jakiś czas ikona odczytu pozycji lub bieżąca, przybliżona prędkość</item>
+		<item>2. listy miejsc dodanych ręcznie lub automatycznie przez skanowanie</item>
+		<item>3. paska sterującego na dole ekranu, z przyciskami włączania skanowania oraz dodawania miejsc.</item>
+		<item>Każda z pozycji listy miejsc, pokazuje ikoną stan miejsca, opis wraz z odległością i czasem wizytacji lub pozostałym do wizytacji, oraz przycisk włączania alarmu.</item>
+		<item>Typowe użycie programu, to dodanie miejsca docelowego i włączenie skanowania przyciskiem na dole z lewej strony. Gdy skanowanie jest aktywne, możesz opuścić program. Po zbliżeniu się do miejsca które dodałeś do listy, program powiadomi Cię o tym.</item>
+		<item>WSKAZÓWKI</item>
+		<item>Ustawienia programu dostępne są w opcji menu.</item>
+	</string-array>
+
+	<string-array name="hint_scanning">
+		<item>3</item>
+		<item>SKANOWANIE</item>
+		<item>Po włączeniu skanowania, program przechodzi w tryb aktywny i co jakiś czas sprawdza bieżącą pozycję, nawet jeśli zamkniesz program, uruchomisz inny, lub telefon przejdzie w stan czuwania.</item>
+		<item>W trybie skanowania, miejsca układane są na liście wg odległości. Te odwiedzone układane są w dół listy, nieodwiedzone układane są od góry listy. Między nimi znajduje się miejsce ostatnio odwiedzone.</item>
+		<item>Jeśli znajdziesz się w pobliżu miejsca z włączonym alarmem (czerwona ikona), program pokaże trzykrotne przypomnienie.</item>
+		<item>Po każdym włączeniu skanowania program usuwa miejsca które nie mają włączonego alarmu, aby uporządkować listę.</item>
+	</string-array>
+
+	<string-array name="hint_add_location">
+		<item>4</item>
+		<item>DODAWANIE MIEJSC</item>
+		<item>Program domyślnie co jakiś czas sprawdza pozycję i jeśli znajdzie w pobliżu jakieś miejsce, doda je do listy.</item>
+		<item>Można także dodawać miejsca ręcznie przez wpisanie części nazwy w okienku i dotknięcie przycisku "plus" obok nazwy.</item>
+	</string-array>
+
+	<string-array name="hint_gps_disabled">
+		<item>5</item>
+		<item>GPS WYŁĄCZONY</item>
+		<item>Odbiornik GPS w Twoim telefonie jest wyłączony. Program nie będzie mógł go użyć, dopóki nie włączysz go w ustawieniach telefonu.</item>
+	</string-array>
+
+	<string-array name="hint_install_tts">
+		<item>6</item>
+		<item>SYNTEZATOR MOWY</item>
+		<item>Nie masz ustawionego lub zainstalowanego syntezatora mowy (Text To Speech) w języku polskim.</item>
+		<item>Najpierw sprawdź w ustawieniach systemowych, czy Twój telefon posiada zainstalowany moduł TTS. Zależnie od modelu telefonu, opcje TTS mogą być nazwane w różny sposób, np. \"język i wprowadzanie\" lub \"ustawienia głosowe\".</item>
+		<item>Jeśli telefon nie posiada fabrycznie zainstalowanego modułu TTS, lub nie mówi on po polsku, należy zainstalować odpowiedni program.</item>
+		<item>CityAlarm został przetestowany z najbardziej popularnym syntezatorem mowy SVOX.</item>
+		<item>Program:\nhttps://play.google.com/store/apps/details?id=com.svox.classic</item>
+		<item>Dane głosu dla języka polskiego:\nhttps://play.google.com/store/apps/details?id=com.svox.classic.langpack.pol_pol_fem</item>		
+		<item>Wersja darmowa, zalecana do sprawdzenia działania przed zakupem:\nhttps://play.google.com/store/apps/details?id=com.svox.classic.langpack.pol_pol_fem_trial</item>
+		<item>Możesz także poszukać innego programu syntezy mowy. CityAlarm powinien pracować poprawnie z każdym standardowym modułem TTS.</item>
+		<item>Po instalacji i konfiguracji należy w oknie ustawień CityAlarm włączyć opcję powiadomień głosem.</item>
+	</string-array>
+			
+</resources>

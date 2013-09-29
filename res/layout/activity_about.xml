@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+    
+	<!-- CONTENT -->
+	<ScrollView
+	    android:id="@+id/scrollViewContent"
+	    android:background="#ff384048"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+		
+		<LinearLayout
+		    android:layout_weight="1"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="#ff384048"
+		    android:paddingTop="20dp"
+		    android:paddingLeft="8dp"
+		    android:paddingRight="8dp"
+		    android:paddingBottom="20dp"
+		    android:orientation="vertical" >
+	
+			<TextView android:id="@+id/labelAbout"
+				android:layout_marginBottom="20sp"
+				android:textColor="#ffffffdd"
+				android:textSize="18sp"
+				style="@style/screenText"/>
+	
+			<TextView
+				android:layout_marginBottom="4sp"
+				android:textColor="#ffa0a0a0"
+				android:text="@string/about_text_copyright1"
+				style="@style/screenText"/>
+	
+			<TextView
+				android:layout_marginBottom="4sp"
+				android:textColor="#ffa0a0a0"
+				android:text="@string/about_text_copyright2"
+				style="@style/screenText"/>
+			
+			<TextView
+				android:layout_marginBottom="20sp"			
+				android:text="@string/about_text_author"
+				android:textSize="18sp"
+				style="@style/screenText"/>
+					
+			<TextView
+				android:layout_marginBottom="20sp"
+				android:textColor="#ffa0a0a0"
+				android:text="@string/about_text_copyright3"
+				style="@style/screenText"/>	
+									
+		</LinearLayout>
+		
+	</ScrollView>
+		
+</LinearLayout>

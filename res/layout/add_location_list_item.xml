@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llayAddLocationListItem"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+	android:background="@drawable/location_list_item_background"
+    android:padding="8dp"
+    android:weightSum="1">
+
+	<TextView
+	    android:id="@+id/textLocationTitle"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:ellipsize="end"
+	    android:shadowColor="#ff000000"
+	    android:shadowDx="0"
+	    android:shadowDy="0"
+	    android:shadowRadius="2"
+	    android:singleLine="true"
+	    android:layout_marginRight="6dp"
+	    android:text="Location 1"
+	    android:textColor="#fff0f0f0"
+	    android:textSize="24sp"
+	    android:textStyle="normal" />
+
+	<TextView
+	    android:id="@+id/textLocationDetails"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="0"
+	    android:ellipsize="end"
+	    android:shadowColor="#ff000000"
+	    android:shadowDx="0"
+	    android:shadowDy="0"
+	    android:shadowRadius="2"
+	    android:singleLine="true"
+	    android:layout_marginRight="6dp"
+	    android:text="800KM"
+	    android:textColor="#ffb0b0b0"
+	    android:textSize="14sp"
+	    android:textStyle="normal" />
+		
+	<Button
+	    android:id="@+id/btnAddLocation"
+		android:layout_width="48dp"
+		android:layout_height="48dp"
+		android:layout_weight="0"
+		android:background="@drawable/button_add_location" />
+
+</LinearLayout>

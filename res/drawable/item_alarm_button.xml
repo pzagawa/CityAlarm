@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+	<!-- pressed -->
+	<item android:state_pressed="true" >	    
+		<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:src="@drawable/btn_alarm_disabled" android:tileMode="disabled" />
+	</item>
+	
+	<!-- focused -->
+	<item android:state_focused="true" >
+		<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:src="@drawable/btn_alarm_disabled" android:tileMode="disabled" />
+	</item>
+
+	<!-- checked -->
+	<item android:state_checked="true" >
+		<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:src="@drawable/btn_alarm_active" android:tileMode="disabled" />
+	</item>
+			
+	<!-- default -->
+	<item>
+		<bitmap xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:src="@drawable/btn_alarm_disabled" android:tileMode="disabled" />
+	</item>
+
+</selector>

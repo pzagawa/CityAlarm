@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ff909090"
+    android:padding="1dp"
+    android:weightSum="1" >
+
+	<!-- HEADER -->	
+	<LinearLayout
+	    android:layout_weight="0"
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:background="#ff586068"
+	    android:gravity="center_vertical"
+    	android:weightSum="1"
+    	android:paddingLeft="8dp"
+    	android:paddingRight="8dp"
+	    android:orientation="horizontal" >
+
+        <TextView
+			android:id="@+id/textLocationsHeader"            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:layout_marginRight="6dp"
+            android:text="@string/title_activity_add_location_label"
+            android:textColor="#fff0f0f0"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+
+        <TextView
+			android:id="@+id/textLocationsHeaderDetails"            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+	    	android:layout_weight="0"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:text="1234"
+            android:textColor="#ffc0c0c0"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+        			    
+	</LinearLayout>
+    
+	<include layout="@layout/divider_line" />
+		
+	<!-- LOCATIONS LIST -->
+	<LinearLayout
+		android:id="@+id/llayLocationsList"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:layout_weight="1"
+	    android:background="#ff384048"
+	    android:orientation="vertical" >
+		
+		<ListView xmlns:android="http://schemas.android.com/apk/res/android"
+		    android:id="@+id/locationsList"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:cacheColorHint="#ff384048"
+		    android:divider="#ff182028"
+		    android:dividerHeight="1px"
+		    android:orientation="vertical" />
+
+	</LinearLayout>
+		
+	<include layout="@layout/bottom_shadow" />
+	
+	<!-- BOTTOM CONTROLS -->
+	<LinearLayout
+		android:id="@+id/llayBottomControls"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:layout_weight="0"
+		android:weightSum="1"
+		android:padding="8dp"
+		android:background="#ff303840"
+		android:orientation="horizontal" >
+
+		<EditText
+		    android:id="@+id/editLocationName"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="@string/add_location_enter_name"
+		    android:ems="20" >
+		    <requestFocus />
+		</EditText>
+	        
+	</LinearLayout>
+         
+</LinearLayout>

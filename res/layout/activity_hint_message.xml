@@ -1,0 +1,104 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ff909090"
+    android:padding="1dp">
+
+	<!-- HEADER -->	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="48dp"
+	    android:background="#ff586068"
+	    android:gravity="center_vertical"
+    	android:weightSum="1"
+	    android:orientation="horizontal" >
+
+		<ImageView
+		    android:id="@+id/imageHintIcon"
+		    android:layout_weight="0"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/hint_icon" />
+	    	    
+        <TextView
+			android:id="@+id/textHintHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+	    	android:layout_weight="1"
+            android:shadowColor="#ff000000"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="2"
+            android:singleLine="true"
+            android:layout_marginRight="6dp"
+            android:text="@string/title_activity_hint_label"
+            android:textColor="#fff0f0f0"
+            android:textSize="22sp"
+            android:textStyle="normal" />
+        			    
+	</LinearLayout>
+    
+	<include layout="@layout/divider_line" />
+		
+	<!-- CONTENT -->
+	<LinearLayout
+		android:id="@+id/llayLocationsList"
+	    android:layout_width="match_parent"
+	    android:layout_height="180dp"
+	    android:background="#ff384048"
+	    android:orientation="vertical" >
+
+		<ScrollView
+		    android:id="@+id/scrollViewContent"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent" >
+
+		    <LinearLayout
+		        android:padding="8dp"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content" >
+
+		        <TextView
+		            android:id="@+id/textHintContent"
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"		            
+		            android:shadowColor="#ff000000"
+		            android:shadowDx="0"
+		            android:shadowDy="0"
+		            android:shadowRadius="1"
+		            android:textColor="#ffe0d0c0"            
+            		android:textSize="16sp"
+            		android:textStyle="normal"
+            		android:layout_marginBottom="4dp"
+					android:text="Medium Text"
+					android:autoLink="web" />
+		        
+		    </LinearLayout>
+		    
+		</ScrollView>
+
+	</LinearLayout>
+
+	<include layout="@layout/bottom_shadow" />
+	
+	<!-- BOTTOM CONTROLS -->
+	<LinearLayout
+		android:id="@+id/llayBottomControls"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:layout_weight="0"
+		android:weightSum="1"
+		android:padding="8dp"
+		android:background="#ff303840"
+		android:orientation="horizontal" >
+
+		<CheckBox
+		    android:id="@+id/checkDisableHint"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="nie pokazuj tego więcej" />
+	        
+	</LinearLayout>
+         
+</LinearLayout>

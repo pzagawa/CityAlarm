@@ -1,0 +1,90 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="#ff181a1f"
+    android:weightSum="1" >        
+
+	<!-- LOCATIONS LIST -->
+	<LinearLayout
+		android:id="@+id/llayLocationsList"	    
+	    android:layout_weight="1"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+		
+		<ListView
+		    android:id="@+id/locationsList"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:divider="#ff000000"
+		    android:dividerHeight="1dp"
+		    android:orientation="vertical" />
+
+	</LinearLayout>
+
+	<!-- GEOCODE UPDATE MESSAGE -->
+	<LinearLayout
+		android:id="@+id/llayGeocodeDbUpdate"	    
+	    android:layout_weight="0"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#ff384048"
+	    android:paddingTop="20dp"
+	    android:paddingLeft="8dp"
+	    android:paddingRight="8dp"
+	    android:orientation="vertical" >
+		
+	    <TextView
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="@string/geocode_db_update_activity"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="#ffffffff"
+	        android:textSize="20sp" />
+
+	</LinearLayout>
+
+	<include layout="@layout/bottom_shadow" />
+		
+	<!-- BOTTOM CONTROLS -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+	    android:background="#ff0a0a0f"
+	    android:orientation="vertical">
+
+	<RelativeLayout
+	    android:layout_weight="0"
+		android:id="@+id/llayBottomControls"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical"
+		android:layout_margin="6dp"
+		android:orientation="horizontal" >
+		
+	    <ToggleButton
+			android:id="@+id/toggleScanLocations"
+			android:textSize="12sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textOn="@string/label_scanning"
+			android:layout_alignParentLeft="true"
+			android:textOff="@string/label_scanning"/>
+	    
+		<Button
+			android:id="@+id/btnAddLocation"
+			android:textSize="12sp"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:text="@string/btn_add_location"/>
+	        
+	</RelativeLayout>
+	
+	</LinearLayout>
+			
+</LinearLayout>

@@ -1,0 +1,115 @@
+<resources>
+
+    <string name="app_name">CityAlarm</string>
+    <string name="title_activity_main">CityAlarm</string>
+	<string name="title_activity_settings">CityAlarm - ustawienia</string>
+    <string name="title_activity_about">CityAlarm - o programie</string>
+	
+	<string name="title_activity_settings_label">ustawienia</string>
+	<string name="title_activity_about_label">o programie</string>
+	<string name="title_activity_add_location_label">DODAJ MIEJSCE</string>
+	<string name="title_activity_hint_label">PODPOWIEDŹ</string>
+				
+    <!-- options menu -->
+    <string name="menu_clear_log">wyczyść Log</string>
+    <string name="menu_settings">ustawienia</string>
+    <string name="menu_about">o programie</string>
+    
+    <!-- bottom control bar -->
+    <string name="label_scanning">SKANOWANIE</string>
+    <string name="btn_add_location">+ DODAJ</string>
+    
+    <!-- toggle button states -->
+    <string name="toggle_button_text_on">TAK</string>
+    <string name="toggle_button_text_off">NIE</string>
+
+    <!-- messages -->
+    <string name="please_wait">proszę czekać</string>
+    <string name="geocode_db_update">aktualizacja bazy miejsc</string>
+    <string name="geocode_db_update_activity">proszę czekać, trwa aktualizacja bazy miejsc..</string>  
+    <string name="location_wait_message">SPRAWDZANIE LOKACJI..</string>  
+    
+    <!-- about -->    
+	<string name="about_text_version">wersja</string>
+	<string name="about_text_copyright1">copyright 2012 &#8211; 2013</string>
+	<string name="about_text_copyright2">by</string>
+	<string name="about_text_author">PIOTR ZAGAWA</string>
+	<string name="about_text_copyright3">WSZYSTKIE PRAWA ZASTRZEŻONE</string>
+		
+	<!-- preferences -->
+	<string-array name="prefs_trigger_alarm_distances">
+		<item>5 km</item>
+		<item>10 km</item>
+		<item>15 km</item>
+		<item>25 km</item>
+		<item>30 km</item>
+		<item>40 km</item>
+		<item>50 km</item>
+	</string-array>
+	<string-array name="prefs_trigger_alarm_distances_values">
+		<item>5</item>
+		<item>10</item>
+		<item>15</item>
+		<item>25</item>
+		<item>30</item>
+		<item>40</item>
+		<item>50</item>
+	</string-array>	
+	
+	<string name="preference_trigger_alarm_distance_title">Włącz Alarm</string>	
+	<string name="preference_trigger_alarm_distance_summary">jeśli dystans do miejsca poniżej</string>			
+
+	<string name="preference_add_locations_title">Dodawaj Miejsca</string>
+	<string name="preference_add_locations_summary">automatycznie znalezione w pobliżu</string>
+
+	<string name="preference_prefer_gps_title">Zwiększ Dokładność</string>
+	<string name="preference_prefer_gps_summary">odczytu położenia i prędkości za pomocą GPS. Zwiększa zużycie baterii</string>
+
+	<string name="preference_speech_notify_title">Powiadom Głosem</string>
+	<string name="preference_speech_notify_summary">zainstalowanego syntezatora mowy</string>
+	<string name="preference_speech_notify_checking_summary">syntezator mowy: sprawdzanie..</string>
+	<string name="preference_speech_notify_disabled_summary">syntezator mowy niedostępny</string>
+
+	<string name="preference_speech_notify_enabled">Powiadomienia głosowe zostały włączone.</string>
+					
+	<!-- notification -->
+	<string name="notification_alarm_title">Znaleziono nowe miejsce!</string>	
+	<string name="notification_alarm_text">jesteś w pobliżu:</string>
+	
+	<!-- date formatting -->
+	<string name="date_str_today">DZISIAJ</string>	
+	<string name="date_str_yesterday">WCZORAJ</string>	
+
+	<!-- full date time formatting -->		
+	<string-array name="time_minutes_text">
+        <item>MINUT</item>
+        <item>MINUTA</item>
+        <item>MINUTY</item>
+        <item>MINUT</item>
+        <item>*</item>
+	</string-array>	
+	<string-array name="time_hours_text">
+        <item>GODZIN</item>
+        <item>GODZINA</item>
+        <item>GODZINY</item>
+        <item>GODZIN</item>
+        <item>*</item>
+	</string-array>	
+		
+    <!-- location list item -->
+	<string name="location_list_item_waiting">USTALANIE POZYCJI</string>
+	<string name="location_list_item_new">NIEODWIEDZONE</string>
+		
+	<!-- add location -->
+	<string name="add_location_enter_name">wpisz nazwę</string>
+	
+	<!-- scanning toast info -->
+	<string name="toast_scanning_title">SKANOWANIE</string>
+	<string name="toast_scanning_enabled">AKTYWNE</string>
+	<string name="toast_scanning_disabled">WYŁĄCZONE</string>
+
+	<!-- geocode update toast info -->
+	<string name="toast_geodb_update_title">AKTUALIZACJA BAZY MIEJSC</string>
+	<string name="toast_geodb_update_content">ZAKOŃCZONA</string>
+
+</resources>
