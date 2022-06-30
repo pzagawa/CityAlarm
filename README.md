@@ -22,5 +22,4 @@ powiadamianie Cię o zbliżaniu się do wybranych miejsc.
 • zajmujesz się tym co lubisz
 • gdy dodane miejsce znajdzie się w zasięgu, otrzymasz powiadomienie
 
-CITYALARM na GooglePlay:
-https://play.google.com/store/apps/details?id=pl.pzagawa.cityalarm
+Aplikacja była dostępna przez kilka lat na Google Play, ale ponieważ nie była aktualizowana, została usunięta.
